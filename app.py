@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 # Conversion factors
 data = {
@@ -31,7 +30,7 @@ def convert(value, from_unit, to_unit, category):
         return value * data[category][to_unit] / data[category][from_unit]
 
 st.title("Unit Converter")
-st.write("Made by MUSSA")
+st.write("Made by Iftikhar")
 
 category = st.selectbox("Select Category", list(data.keys()))
 
